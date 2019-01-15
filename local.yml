@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: testers
   become: true
   tasks:
   - name: Install htop
