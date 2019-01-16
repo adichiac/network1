@@ -3,6 +3,7 @@
   become: true
   tasks:
   - name: Install packages
+    ping: testers
     apt: name={{item}}
     with_items:
       - htop
