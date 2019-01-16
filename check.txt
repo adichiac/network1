@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Ansible write to a file example
+  - copy:
+      content: |
+        Content parameter example.
+        Check4.txt will be created after this task is executed.
+      dest: /Users/mdtutorials2/Documents/Ansible/check4.txt
+      backup: yes
