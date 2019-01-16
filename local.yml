@@ -1,5 +1,5 @@
 --- 
-- hosts: testers
+- hosts: localhost
   become: true
   tasks:
   - name: Install packages
