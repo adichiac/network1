@@ -1,7 +1,10 @@
 --- 
-- hosts: 10.100.1.15
+- hosts: testers
+  become: true
   tasks:
-      - name: Create file
-        file:
-            path: /tmp/yallo
-            state: touch
+  - name: Install packages
+    apt: name={{item}}
+    with_items:
+      - htop
+      - mc
+      - tmux
