@@ -1,5 +1,5 @@
 --- 
-- hosts: 10.100.1.14
+- hosts:all
   become: true
   tasks:
   - name: Install packages
