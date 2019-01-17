@@ -1,5 +1,5 @@
 --- 
-- hosts:all
+- hosts: testers
   become: true
   tasks:
   - name: Install packages
